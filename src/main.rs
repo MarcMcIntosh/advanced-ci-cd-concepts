@@ -1,8 +1,8 @@
 use glob::glob;
 use serde::Deserialize;
 use serde_json;
-use std::os::unix::fs::PermissionsExt;
 use std::fs;
+use std::os::unix::fs::PermissionsExt;
 
 // load the regex-fules.json file to provide configs
 const JSON: &str = include_str!("../rules.json");
