@@ -9,7 +9,8 @@
 			"extensions": [
 				"Zerotaskx.rust-extension-pack",
 				"vadimcn.vscode-lldb",
-				"GitHub.copilot-nightly"
+				"GitHub.copilot-nightly",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
