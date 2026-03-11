@@ -11,18 +11,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]    
-        
-  format:
-    runs-on: ${{ matrix.os }}
+        os: [ubuntu-latest, macos-latest]
     steps:
-      - uses: actions/checkout@v4
-      - name: Check Cargo FMT
-        run: cargo fmt --check
-
-  build:
-    runs-on: ${{matrix.os}}
-    needs: format
-    steps:
-      - name: Make sure Rust builds correctly
-        run: cargo build
+    - uses: actions/checkout@v4
+    - name: Check Cargo FMT
+      run: cargo fmt --check
+    - name: Make sure Rust builds correctly
+      run: cargo build
