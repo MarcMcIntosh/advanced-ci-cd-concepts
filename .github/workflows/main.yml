@@ -18,3 +18,5 @@ jobs:
       run: cargo fmt --check
     - name: Make sure Rust builds correctly
       run: cargo build
+    - name: Test
+      run: cargo test
