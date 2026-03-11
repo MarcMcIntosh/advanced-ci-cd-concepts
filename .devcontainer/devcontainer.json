@@ -10,7 +10,8 @@
 				"Zerotaskx.rust-extension-pack",
 				"vadimcn.vscode-lldb",
 				"GitHub.copilot-nightly",
-				"ms-vscode.makefile-tools"
+				"ms-vscode.makefile-tools",
+				"github.vscode-github-actions"
 			]
 		}
 	},
